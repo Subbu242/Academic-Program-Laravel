@@ -1,0 +1,40 @@
+.notFound{
+    height: 84vh;
+    /* // background-color: rgba(16, 34, 73, 1); */
+    background-color: rgb(220, 228, 247);
+    background-size: 100% 100%;
+}
+
+#pageNotFoumd{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    color:#21839E;
+}
+
+#pageNotFoundImage{    
+    position: absolute;
+    top: 20%;
+    left: 44%;
+}
+
+ .buttonLogin {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    border-width: 2px !important;
+    border-color: white !important;
+    background-color: rgba(23, 133, 160, 1) !important;
+    color: white !important;
+    font-weight: bold !important;
+    width: 200px;
+  }
+  
+   .buttonLogin:hover {
+    border-width: 2px !important;
+    border-color: white !important;
+    background-color: rgba(30, 100, 123, 1) !important;
+    color: white !important;
+    font-weight: bold !important;
+    /* width: 200px; */
+  }

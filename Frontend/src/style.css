@@ -1,0 +1,577 @@
+/* Basic CSS styles for the homepage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7ac3de;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the content spans the full height of the viewport */
+    background-image: url('back.jpg');
+    background-size: cover; /* Make the background image cover the container */
+    background-position: center;
+}
+
+/* CSS for the header */
+header {
+     background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    /*display: flex; */
+    flex-direction: row; /* Display navigation links side by side */
+    justify-content: center; /* Center the links horizontally */
+}
+
+/* CSS for the navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display navigation links side by side */
+    justify-content: center; /* Center the links horizontally */
+}
+
+nav li {
+    margin: 0 20px; /* Add spacing between navigation links */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CSS for the dropdown links */
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* Hidden menu styles */
+nav {
+    /* display: none; Hide the menu by default */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* header:hover nav {
+    display: block; Show the menu when hovering over header
+} */
+
+/* CSS for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /* margin-top: 1%; */
+    /* position: absolute; Position the footer at the bottom */
+    /* bottom: 0;  Stick it to the bottom of the viewport   */
+    width: 100%; /* Make it full width */
+}
+
+.container {
+    /* width: 1000px; */
+    width: 50vw;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    background-image: url('back1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* margin-left: 400px; */
+    margin-left: 25vw;
+    overflow-y: scroll;
+}
+
+.container2 {
+    /* width: 1800px; */
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    background-image: url('back1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+     margin-bottom: 20px;
+}
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown link */
+.dropdown-toggle {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Style the dropdown links */
+
+/* Change the color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show the dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.courses-section {
+    flex-grow: 2;
+    padding: 20px;
+}
+
+.course {
+    background-color: #d5f2a0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.dashboard-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #d5f2a0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    overflow-y: scroll;
+}
+
+.dashboard-section::-webkit-scrollbar {
+    display: none;
+  }
+
+.dashboard-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.phoneNo{
+    width: 17vw;
+    margin-left:-5vw;
+}
+
+select {
+    width: 110%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add styles for the chat box outside of the container on the left middle */
+.chat-box {
+    background-image: url('back1.jpg');
+    background-size: cover; /* Make the background image cover the container */
+    background-position: center; /* Center the background image */
+    width: 250px; /* Adjust the width as needed */
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* position: fixed; */
+    position: absolute;
+    right: 50px; /* Adjust the left position to center it */
+    top: 58%; /* Center it vertically */
+    transform: translateY(-50%); /* Center it vertically */
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+.chat-input {
+    display: flex;
+}
+
+.chat-input input {
+    flex-grow: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    max-width: 45%;
+}
+
+/* Responsive styles for small screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .container {
+        /* Adjust container width for smaller screens */
+        /* width: 90%;  */
+        width: 60vw; 
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Make images responsive within their container */
+        margin-bottom: 10px; /* Add spacing between stacked images */
+    }
+
+    .dropdown-toggle {
+        padding: 10px 10px; /* Adjust padding for dropdown links on small screens */
+    }
+}
+
+
+/* Add a media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the container contents vertically on smaller screens */
+    }
+
+    .chat-box {
+        width: 100%; /* Adjust the chat box width to cover the full width of the container */
+        left: 0; /* Reset the left position */
+        top: auto; /* Reset the top position */
+        bottom: 0; /* Position it at the bottom of the container */
+    }
+}
+select {
+  font-size: 14px; /* Adjust the font size */
+  padding: 6px; /* Adjust the padding */
+  width: 120px; /* Adjust the width */
+} 
+
+#miniButton{
+    border: 1px solid beige;
+    border-radius: 50px;
+    /* width: 12vw; */
+    margin-right: 1vw;
+    margin-bottom: 1%;
+}
+
+#miniButton:hover, .send-button:hover, .reply-button:hover, .sendButton:hover ,.submit-button:hover, .student-button:hover, #moreInfo:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    background-color: #7ac3de;
+}
+
+.analytics-button, .report-button{
+    margin-top: -1%;
+    margin-left: 25%;
+    background-color:#7ac3de;
+}
+
+.manage-course-button{
+    margin-top: 1%;
+    /* margin-left: 25%; */
+    background-color:#7ac3de;
+}
+
+.manage-analytics-button{
+    margin-top: 1%;
+    /* margin-left: 5%; */
+    background-color:#7ac3de;
+}
+
+.messageInput{
+    display: none;
+    /* position: absolute; */
+    float: right;
+    width: 400px;
+    height: 70px;
+    /* margin-left: 25%; */
+    overflow: auto;
+}
+.messageInputNew{
+    /* position: absolute; */
+    float: right;
+    width: 400px;
+    height: 25px;
+    /* margin-left: 25%; */
+    overflow: auto;
+}
+
+.send-button{
+    display: none;
+    /* position: absolute; */
+    float: right;
+    /* margin-left: 47%; */
+    /* margin-top: 7%; */
+    border-radius: 30px;
+}
+.send-buttonNew{
+    /* position: absolute; */
+    float: right;
+    /* margin-left: 47%; */
+    /* margin-top: 7%; */
+    border-radius: 30px;
+}
+.sendButton{
+    display: none;
+    position: absolute;
+    margin-left: 43%;
+    margin-top: 5%;
+    border-radius: 30px;
+    height: 30px;
+}
+
+.reply-button{
+    border-radius: 30px;
+}
+
+.message-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #d5f2a0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+
+.create-button{
+   float: right;
+   margin-top: -2%;
+   margin-right: 2%;
+}
+
+.delete-button{
+    float: right;
+    margin-top: -4%;
+}
+
+#courseHeading,#studentName{
+    float: left;
+    width: 45%;
+    margin-left: 2%;
+    margin-top: -2%;
+}
+#courseCode,#studentEmail,#ProgramCode,#ProgramCollege{
+    float: left;
+    width: 15%;
+    margin-left: 2%;
+    margin-top: -2%;
+}
+#ProgramName{
+    float: left;
+    width: 35%;
+    margin-left: 2%;
+    margin-top: -2%;
+}
+
+#ProgramObjective{
+    width: 25%;
+    /* margin-top: 6%; */
+    margin-left: 30%;
+}
+.ProgramObjectiveButton{
+    width: 150px;
+    /* margin-left: 80%;     */
+    /* margin-top: 6%; */
+}
+
+#description{
+    height: 420px;
+    font-size: 25px;
+}
+
+/* #question1-input,#q1-option1,#q1-option2,#q1-option3,#q1-option4,#q1-answer{
+    width: 400px;
+    overflow: auto;
+} */
+
+#moreInfo{
+    float: right;
+    margin-top: -5%;
+    border-radius: 15px;
+    font-size: 30px;
+    color:cadetblue
+}
+
+#ProgramObjectives{
+    width: 100%;
+}
+
+.barChart1{
+    /* position: absolute; */
+    margin-left: 40%;
+    margin-top: -15%;
+    margin-bottom: 10%;
+  }
+
+  #sup{
+    color: red;
+    font-size: 20px;
+  }
+
+  #results,.barChart{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 770px) {
+    #studentName,#courseHeading,#ProgramName{
+        margin-top: 5px;
+    }
+    #studentName,#studentEmail,#courseHeading,#courseCode,#ProgramName,#ProgramCode,#ProgramCollege,#ProgramObjective{
+      /* width: 475px; */
+      width: 63vw;
+      margin-left: 4%;
+   }
+   #inputBlock{
+    margin-bottom: 80px;
+   }
+   #inputBlock1{
+    margin-bottom: 140px;
+   }
+   .delete-button{
+    margin-top: -50px;
+    }
+    .deleteButton{
+        margin-top: 20px;
+    }
+    .createExamButton, .createAssessmentButton{
+        margin-top: 30px;
+    }
+    .createAssessmentButton{
+        width: 200px;
+        margin: 0;
+    }
+    #courseInfo{
+        height: 100px;
+    }
+    /* #courseInfo1{
+        height: 200px;
+    } */
+    .deleteButton1{
+        margin-top: 50px;
+    }
+    #moreInfo{
+        margin-top: 45px;
+    }
+
+    .courseContent{
+        height: 400px;
+    }
+}
+
+  @media screen and (max-width: 420px) {
+   .delete-button{
+    width: 150px;
+    }
+    
+    .deleteButton{
+        margin-top: -10px;
+        width: 60vw;
+    }
+
+    .dashboard-section{
+        height: 200px;
+    }
+    /* #courseInfo{
+        height: 100px;
+    } */
+  }
+
+  /* Admin Course */
+  @media screen and (max-width: 475px) {
+    .course{
+        height: 180px;
+    }
+    .courseDiv{
+        height: 280px;
+    }
+    #courseHead{
+        margin-bottom: 25px;
+    }
+  }
+
+  /* Admin Academic Program */
+  @media screen and (max-width: 1255px) {
+    #courseInfo1{
+        height: 180px;
+    }
+    #courseHead{
+        margin-bottom: 25px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #courseInfo1{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .instructorGradesContainer ,.courseContent{
+        height: 500px;
+    }
+    .gradesInput{
+        width: 100% !important;
+        margin: auto;
+    }
+    .delete-button{
+        float:none;
+        margin-top: 2%;
+    }
+}
+
+.trends{
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
