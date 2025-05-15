@@ -42,3 +42,30 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 ### We have designed the website for 5 different roles, Admin, Student, Instructor, program Coordinator and Quality Assurance Officer. We have also added the chat functionality between Student and Instructor & Student and Coordinator. We have created and tested too many APIs for different individual functionalities that perform all the CRUD operations.
+
+
+### LOGIN CREDENTIALS:-
+
+Admin:-\
+Username:- Subhash\
+Password:- Subhash@22
+
+
+Student:-\
+Username:- Jake\
+Password:- Jake@22
+
+
+Instructor:-\
+Username:- Durga\
+Password:- Durga@22
+
+
+Quality Assurance Officer:-\
+Username:- Varshith\
+Password:- Varshith@4
+
+
+Program Coordinator:-\
+Username:- Ajay\
+Password:- Ajay@22
