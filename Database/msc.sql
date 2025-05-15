@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: May 15, 2025 at 05:29 AM
+-- Generation Time: May 16, 2025 at 12:16 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -284,7 +284,8 @@ INSERT INTO `userscourse` (`id`, `Uid`, `Cid`, `Score`, `Grades`, `Feedback`) VA
 (4, 3, 1, 100, 'A', 'Excellent. Keep it up.'),
 (5, 3, 2, 50, 'C', 'Can do better'),
 (6, 3, 3, 75, 'B', 'Very good. You have the potential and can Score well'),
-(7, 3, 4, 88, 'A', 'Very Good. Keep it up.');
+(7, 3, 4, 88, 'A', 'Very Good. Keep it up.'),
+(11, 2, 23, 0, '', '');
 
 --
 -- Indexes for dumped tables
@@ -382,13 +383,13 @@ ALTER TABLE `studentinstructormessage`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `Uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `Uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT for table `userscourse`
 --
 ALTER TABLE `userscourse`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
